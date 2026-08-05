@@ -66,4 +66,18 @@ public class EmployeeDaoImpl implements EmployeeDao {
 		return null;
 	}
 
+	public void printEmployeeList() {
+		System.out.println("-------------------------");
+		System.out.println("  ID     NAME      AGE      SALARY  ");
+
+		for (Employee employee : empList) {
+			System.out.printf("%3d", employee.getId());
+			System.out.printf("%10s", employee.getName());
+			System.out.printf("%3d", employee.getAge());
+			System.out.printf("%5.3f", employee.getSalary());
+			System.out.println();
+		}
+
+	}
+
 }
