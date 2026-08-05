@@ -81,6 +81,20 @@ public class EmployeeDaoImpl implements EmployeeDao {
 
 	}
 
+	public void printEmployeeList(List<Employee> list) {
+		System.out.println("-------------------------");
+		System.out.println("  ID     NAME      AGE      SALARY  ");
+
+		for (Employee employee : list) {
+			System.out.printf("%3d", employee.getId());
+			System.out.printf("%10s", employee.getName());
+			System.out.printf("%5d", employee.getAge());
+			System.out.printf("% 5.3f", employee.getSalary());
+			System.out.println();
+		}
+
+	}
+
 	@Override
 	public List<Employee> ageBetween(int from, int to) {
 

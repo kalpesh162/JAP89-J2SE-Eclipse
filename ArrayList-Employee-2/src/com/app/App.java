@@ -1,5 +1,6 @@
 package com.app;
 
+import java.util.List;
 import java.util.Scanner;
 
 import com.dao.EmployeeDao;
@@ -15,7 +16,7 @@ public class App {
 		System.out.println("Enter Id");
 		employee.setId(scanner.nextInt());
 		System.out.println("Enter NAME");
-		scanner.next();
+		scanner.nextLine();
 		employee.setName(scanner.nextLine());
 		System.out.println("Enter AGE");
 		employee.setAge(scanner.nextInt());
@@ -36,6 +37,8 @@ public class App {
 			System.out.println(" 2 : DELETE EMPLOYEE ");
 			System.out.println(" 3 : CHECK EMPLOYEE ");
 			System.out.println(" 4 : TOTAL EMPLOYEE ");
+			System.out.println(" 5 : UPDATE EMPLOYEE ");
+			System.out.println(" 6 : Between Age EMPLOYEE LIST");
 			System.out.println("--------------------------------");
 			System.out.println("Enter Option Number  !!!");
 			option = scanner.nextInt();
@@ -88,16 +91,20 @@ public class App {
 				else
 					System.out.println("Empoyee Update Failed");
 				break;
-				
-			case 6 :
+
+			case 6:
 				System.out.println("List Of Employee Enter Range Of ---  >Age ");
 				System.out.println("From AGE  ");
-				int fromAge=scanner.nextInt();
+				int fromAge = scanner.nextInt();
 				System.out.println("To AGE  ");
-				int toAge=scanner.nextInt();
+				int toAge = scanner.nextInt();
+
+				List<Employee> lists = dao.ageBetween(fromAge, toAge);
+
+				dao.printEmployeeList(lists);
 				
-				
-			
+				break;
+
 			}
 			System.out.println("DO YOU WANT TO CONTINUE  PRESS 1  ...");
 			x = scanner.nextInt();

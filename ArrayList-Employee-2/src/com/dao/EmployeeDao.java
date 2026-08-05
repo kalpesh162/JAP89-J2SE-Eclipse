@@ -12,12 +12,14 @@ public interface EmployeeDao {
 
 	boolean isEmployeePresent(Employee employee);
 
-	boolean updateEmployee(int id,Employee employee);
+	boolean updateEmployee(int id, Employee employee);
 
 	int totalEmployees();
 
 	void printEmployee(Employee employee);
-	
-	List<Employee>ageBetween(int from , int to);
+
+	List<Employee> ageBetween(int from, int to);
+
+	void printEmployeeList(List<Employee> list);
 
 }
