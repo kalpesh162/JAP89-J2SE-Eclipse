@@ -1,5 +1,7 @@
 package com.dao;
 
+import java.util.List;
+
 import com.model.Employee;
 
 public interface EmployeeDao {
@@ -15,5 +17,7 @@ public interface EmployeeDao {
 	int totalEmployees();
 
 	void printEmployee(Employee employee);
+	
+	List<Employee>ageBetween(int from , int to);
 
 }

@@ -69,18 +69,35 @@ public class App {
 				if (dao.isEmployeePresent(searchEmployee)) {
 					System.out.println("Employee Found ....");
 					// printEmployee
-				}
-				else {
+				} else {
 					System.err.println("Employee Not Found....");
 				}
 				break;
 			case 4:
 				System.out.println("Total Employees : " + dao.totalEmployees());
 				break;
-			
-			case 5 :
-				
 
+			case 5:
+				System.out.println("Enter Id Employee To Update");
+				int id = scanner.nextInt();
+
+				Employee updateEmployee = inputEmployee();
+
+				if (dao.updateEmployee(id, updateEmployee))
+					System.out.println("Empoyee Update SUCESSS");
+				else
+					System.out.println("Empoyee Update Failed");
+				break;
+				
+			case 6 :
+				System.out.println("List Of Employee Enter Range Of ---  >Age ");
+				System.out.println("From AGE  ");
+				int fromAge=scanner.nextInt();
+				System.out.println("To AGE  ");
+				int toAge=scanner.nextInt();
+				
+				
+			
 			}
 			System.out.println("DO YOU WANT TO CONTINUE  PRESS 1  ...");
 			x = scanner.nextInt();

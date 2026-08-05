@@ -1,6 +1,7 @@
 package com.dao;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import com.model.Employee;
 
@@ -77,6 +78,19 @@ public class EmployeeDaoImpl implements EmployeeDao {
 			System.out.printf("%5.3f", employee.getSalary());
 			System.out.println();
 		}
+
+	}
+
+	@Override
+	public List<Employee> ageBetween(int from, int to) {
+
+		List<Employee> empAgeList = new ArrayList<Employee>();
+
+		for (Employee emp : empList)
+			if (emp.getAge() >= from && emp.getAge() <= to)
+				empAgeList.add(emp);
+
+		return empAgeList;
 
 	}
 
