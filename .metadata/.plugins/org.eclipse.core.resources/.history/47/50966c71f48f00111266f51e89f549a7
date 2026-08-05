@@ -1,0 +1,21 @@
+package com.dao;
+
+import java.util.ArrayList;
+
+import com.model.Employee;
+
+public class EmployeeDao {
+
+	ArrayList<Employee>empList=new ArrayList<>();
+
+	public boolean addEmployee(Employee employee) {
+		return .add(employee);
+	}
+	
+	
+	
+
+	
+	
+	
+}
