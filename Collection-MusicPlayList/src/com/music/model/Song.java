@@ -62,8 +62,11 @@ public class Song {
 
 	@Override
 	public String toString() {
-		return "Song [srNo=" + srNo + ", name=" + name + ", singer=" + singer + ", isLiked=" + isLiked + ", duration="
-				+ duration + "]";
+		return String.format("%-5d %-25s %-25s %-5b   %-5.2f", srNo, name, singer, isLiked, duration);
+		/*
+		 * return "Song [srNo=" + srNo + ", name=" + name + ", singer=" + singer +
+		 * ", isLiked=" + isLiked + ", duration=" + duration + "]";
+		 */
 	}
 
 	@Override
