@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import com.music.model.Song;
 
 public class PlayListOperationImpl implements PlayListOperation {
-	ArrayList<Song> musicList = new ArrayList<Song>();
+	private ArrayList<Song> musicList = new ArrayList<Song>();
 
 	@Override
 	public void addSong(Song song) {
