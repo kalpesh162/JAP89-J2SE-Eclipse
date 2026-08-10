@@ -27,7 +27,15 @@ public class App {
 
 		System.out.println("-----------------------------------------");
 
-		Comparator<Student> byName = new StudentNameComparator();
+		Comparator<Student> byName = new Comparator<Student>() {
+
+			@Override
+			public int compare(Student o1, Student o2) {
+
+				return o1.getName().compareTo(o2.getName());
+			}
+		};
+
 		TreeSet<Student> jpa89Name = new TreeSet<Student>(byName);
 		jpa89Name.add(s1);
 		jpa89Name.add(s2);
@@ -40,8 +48,15 @@ public class App {
 
 		System.out.println("------------------------");
 
-		Comparator<Student> byMarks = new StudentMarksComparator();
-		TreeSet<Student> jpa89Marks = new TreeSet<Student>(byMarks);
+		// Here we are passing Anonymous Inner class as argument to Constructor
+		TreeSet<Student> jpa89Marks = new TreeSet<Student>(new Comparator<Student>() {
+
+			@Override
+			public int compare(Student o1, Student o2) {
+
+				return Double.valueOf(o1.getMarks()).compareTo(o2.getMarks());
+			}
+		});
 		jpa89Marks.add(s1);
 		jpa89Marks.add(s2);
 		jpa89Marks.add(s3);
