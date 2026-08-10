@@ -1,5 +1,6 @@
 package p1;
 
+import java.util.Comparator;
 import java.util.TreeSet;
 
 public class App {
@@ -23,6 +24,20 @@ public class App {
 		jpa89.add(s7);
 
 		System.out.println(jpa89);
+		
+		System.out.println("-----");
+		
+		Comparator<Student>byName=new StudentNameComparator();
+		TreeSet<Student>jpa89Name=new TreeSet<Student>(byName);
+		jpa89Name.add(s1);
+		jpa89Name.add(s2);
+		jpa89Name.add(s3);
+		jpa89Name.add(s4);
+		jpa89Name.add(s5);
+		
+		System.out.println(jpa89Name);
+		
+		
 
 	}
 
