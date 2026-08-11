@@ -1,4 +1,4 @@
-package basic;
+package com.basic;
 
 public class Student implements Comparable<Student> {
 	private int id;
@@ -48,27 +48,32 @@ public class Student implements Comparable<Student> {
 
 	}
 
-	// this code for to highest Lowest Id
 	/*
-	  @Override 
-	  public int compareTo(Student obj) {
-	                if (this.id > obj.id) return -1;
-	                else if (this.id < obj.id) 
-	                return 1; 
-	                else return 0; 
-	                }
-	 */
-/*
+	// Marks
 	@Override
-	public int compareTo(Student obj) {
-
-		return Integer.valueOf(id).compareTo(obj.id);
+	public int compareTo(Student other) {
+		Double d1=Double.valueOf(this.marks);
+		Double d2=Double.valueOf(other.marks);
+		int res=d1.compareTo(d2);
+		if(res==0) {
+			res=this.name.compareTo(other.name);
+		}
+		
+		return res;
 	}
+	
 	*/
+	
 	@Override
-	public int compareTo(Student obj) {
-
-		return - (Integer.valueOf(id).compareTo(obj.id));
+	public int compareTo(Student other) {
+		Double d1=Double.valueOf(this.marks);
+		Double d2=Double.valueOf(other.marks);
+		int res=d1.compareTo(d2);
+		if(res==0) {
+			res=-(this.name.compareTo(other.name));
+		}
+		
+		return -res;
 	}
 
 }
