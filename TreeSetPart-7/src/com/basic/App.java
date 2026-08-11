@@ -5,9 +5,9 @@ import java.util.TreeSet;
 public class App {
 
 	public static void main(String[] args) {
-		Student s1 = new Student(101, "Rahul", 80);
+		Student s1 = new Student(101, "Rahul", 80.65);
 		Student s2 = new Student(102, "Amit", 70);
-		Student s3 = new Student(103, "Sneha", 80);
+		Student s3 = new Student(103, "Sneha", 80.75);
 		Student s4 = new Student(104, "Rohit", 60);
 		Student s5 = new Student(105, "Priya", 70);
 

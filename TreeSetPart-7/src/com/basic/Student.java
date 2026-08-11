@@ -43,7 +43,7 @@ public class Student implements Comparable<Student> {
 	@Override
 	public String toString() {
 		// return "Student [id=" + id + ", name=" + name + ", marks=" + marks + "] \n";
-		String res = String.format("%-5d  %-20s  %-4f \n", id, name, marks);
+		String res = String.format("%-5d  %-10s  %-4.2f \n", id, name, marks);
 		return res;
 
 	}
