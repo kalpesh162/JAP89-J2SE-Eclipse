@@ -23,7 +23,10 @@ public class Example02 {
 		TreeMap<Integer, String> treeMap = new TreeMap<Integer, String>(map1);
 		// TreeMap<Integer, String> treeMap = new TreeMap<>(map1);
 
-		System.out.println(treeMap);
+		System.out.println("Tree Map  "+treeMap);
+
+		HashMap<Integer, String> hm = new HashMap<Integer, String>(treeMap);
+		System.out.println("Hash Map "+hm);
 
 	}
 
