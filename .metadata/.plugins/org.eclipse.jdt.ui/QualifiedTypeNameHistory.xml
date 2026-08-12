@@ -8,7 +8,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="java.util.ListIterator"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.music.model.Song"/>
     <fullyQualifiedTypeName name="com.music.dao.PlayListOperation"/>
@@ -22,7 +21,18 @@
     <fullyQualifiedTypeName name="java.beans.beancontext.BeanContextServiceProviderBeanInfo"/>
     <fullyQualifiedTypeName name="p3.Student"/>
     <fullyQualifiedTypeName name="java.awt.JobAttributes"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="p4.Data"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="basic.Student"/>
+    <fullyQualifiedTypeName name="com.basic.Student"/>
+    <fullyQualifiedTypeName name="java.util.PrimitiveIterator"/>
+    <fullyQualifiedTypeName name="java.util.TreeSet"/>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
+    <fullyQualifiedTypeName name="basic.Employee"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="basic.EmployeeDeptSalaryComparator"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>
