@@ -33,6 +33,9 @@
     <fullyQualifiedTypeName name="basic.Employee"/>
     <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="basic.EmployeeDeptSalaryComparator"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.lang.Appendable"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="boolean"/>
 </qualifiedTypeNameHistroy>
