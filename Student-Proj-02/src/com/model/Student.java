@@ -7,12 +7,18 @@ public class Student {
 	private String gender;
 
 	public Student() {
-		
+
 	}
 
 	public Student(int id, String name, float marks, String gender) {
 		super();
 		this.id = id;
+		this.name = name;
+		this.marks = marks;
+		this.gender = gender;
+	}
+
+	public Student(String name, float marks, String gender) {
 		this.name = name;
 		this.marks = marks;
 		this.gender = gender;
@@ -50,9 +56,9 @@ public class Student {
 		this.gender = gender;
 	}
 
-	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", marks=" + marks + ", gender=" + gender + "]";
+		return String.format("%-5d %-25s %-5f %-5s", id, name, marks, gender);
+
 	}
 
 }

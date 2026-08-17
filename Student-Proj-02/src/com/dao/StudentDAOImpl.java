@@ -47,7 +47,7 @@ public class StudentDAOImpl implements StudentDAO {
 			ps.setString(1, upstudent.getName());
 			ps.setFloat(2, upstudent.getMarks());
 			ps.setString(3, upstudent.getGender());
-			ps.setInt(1, upstudent.getId());
+			ps.setInt(4, upstudent.getId());
 			return ps.executeUpdate();
 
 		} catch (Exception e) {
@@ -59,7 +59,7 @@ public class StudentDAOImpl implements StudentDAO {
 	@Override
 	public int deleteStudent(Student deletestudent) {
 
-		return 0;
+		return deleteStudent(deletestudent.getId());
 	}
 
 	@Override
