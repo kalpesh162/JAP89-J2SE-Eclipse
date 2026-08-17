@@ -7,8 +7,6 @@ import java.sql.SQLException;
 
 public class UpdateData {
 	
-
-
 	private final static String URL = "jdbc:mysql://localhost:3306/jap89";
 	private final static String USERNAME = "root";
 	private final static String PASSWORD = "root";
