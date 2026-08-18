@@ -7,11 +7,13 @@ import java.util.Scanner;
 import com.dao.StudentDAO;
 import com.dao.StudentDAOImpl;
 import com.model.Student;
+import com.service.StudentService;
+import com.service.StudentServiceImpl;
 
 public class App {
 
 	private static Scanner scanner = new Scanner(System.in);
-	private static StudentDAO studentDAO = new StudentDAOImpl();
+	private static StudentService service = new StudentServiceImpl();
 
 	public static void main(String[] args) throws IOException {
 
@@ -56,7 +58,7 @@ public class App {
 		// take id
 		System.out.println("Enter ID  STUDENT ");
 		int id = scanner.nextInt();
-		Student student = studentDAO.findStudentById(id);
+		Student student = service.getStudentById(id);
 		if (student != null) {
 			// show details findStudentById()
 			System.out.println(student);
@@ -66,7 +68,7 @@ public class App {
 			student.setId(id);
 
 			// update
-			int rows = studentDAO.updateStudent(student);
+			int rows = service.modifyStudent(student);
 			if (rows > 0)
 				System.out.println("UPDATE SUCCESS");
 			else
@@ -84,7 +86,7 @@ public class App {
 		System.out.println("Enter ID  STUDENT ");
 		int id = scanner.nextInt();
 
-		int rows = studentDAO.deleteStudent(id);
+		int rows = service.removeStudent(id);
 		if (rows > 0)
 			System.out.println("DELETE SUCCESS");
 		else
@@ -95,7 +97,7 @@ public class App {
 	private static void addStudent() {
 
 		Student student = inputStudent();
-		int rows = studentDAO.addStudent(student);
+		int rows = service.registerStudent(student);
 		if (rows > 0)
 			System.out.println("ADD SUCCESS");
 		else
@@ -105,7 +107,7 @@ public class App {
 
 	private static void showStudents() {
 		System.out.println("==== DISPLAY ======");
-		List<Student> list = studentDAO.findAllStudent();
+		List<Student> list = service.getAllStudnets();
 		System.out.println("=====================");
 		for (Student student : list)
 			System.out.println(student);
