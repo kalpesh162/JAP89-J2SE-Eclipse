@@ -3,9 +3,11 @@ package com.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.exception.StudentDAoException;
 import com.model.Student;
 import com.utility.DBUtility;
 
@@ -20,12 +22,12 @@ public class StudentDAOImpl implements StudentDAO {
 
 			ps.setString(1, addStudent.getName());
 			ps.setFloat(2, addStudent.getMarks());
-			ps.setString(3, addStudent.getGender());
+			ps.setString(4, addStudent.getGender());
 
 			return ps.executeUpdate();
 
-		} catch (Exception e) {
-			e.printStackTrace();
+		} catch (StudentDAoException | SQLException e) {
+			// Error Log
 		}
 		return 0;
 	}
@@ -43,7 +45,7 @@ public class StudentDAOImpl implements StudentDAO {
 			ps.setInt(4, upstudent.getId());
 			return ps.executeUpdate();
 
-		} catch (Exception e) {
+		} catch (StudentDAoException | SQLException e) {
 			e.printStackTrace();
 		}
 		return 0;

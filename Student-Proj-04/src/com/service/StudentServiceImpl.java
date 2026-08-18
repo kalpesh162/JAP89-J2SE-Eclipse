@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.dao.StudentDAO;
 import com.dao.StudentDAOImpl;
+import com.exception.StudentServiceException;
 import com.model.Student;
 
 public class StudentServiceImpl implements StudentService {
@@ -12,11 +13,23 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public int registerStudent(Student student) {
-		return studentDAO.addStudent(student);
+		if (student != null)
+			return studentDAO.addStudent(student);
+		else {
+
+			try {
+				throw new StudentServiceException("Student Cant be null");
+			} catch (Exception e) {
+
+			}
+		}
+		return 0;
 	}
 
 	@Override
 	public int removeStudent(int id) {
+		if(id<1)
+			throw new StudentServiceException("id never -ve "+id);
 
 		return studentDAO.deleteStudent(id);
 	}
