@@ -58,7 +58,8 @@ public class App {
 		System.out.println("Enter ID  STUDENT ");
 		int id = scanner.nextInt();
 		Student student = service.getStudentById(id);
-		if (student != null) {
+
+		if (StudentValidator.isStudentValid(student)) {
 			// show details findStudentById()
 			System.out.println(student);
 			// Update Details
@@ -74,7 +75,8 @@ public class App {
 				System.out.println("FAILED TO UPDATE ");
 
 		} else {
-			System.out.println("STUDENT NOT EXIST");
+			System.out.print("Not Valid Student    ");
+			System.err.println(StudentValidator.msg.toUpperCase());
 		}
 
 		// update
@@ -84,12 +86,16 @@ public class App {
 	private static void deleteStudent() {
 		System.out.println("Enter ID  STUDENT ");
 		int id = scanner.nextInt();
-
-		int rows = service.removeStudent(id);
-		if (rows > 0)
-			System.out.println("DELETE SUCCESS");
-		else
-			System.out.println("FAILED TO DELETE ");
+		if (id < 0) {
+			System.err.println("ID Never Negative");
+		}
+		{
+			int rows = service.removeStudent(id);
+			if (rows > 0)
+				System.out.println("DELETE SUCCESS");
+			else
+				System.out.println("FAILED TO DELETE ");
+		}
 
 	}
 
@@ -97,11 +103,17 @@ public class App {
 
 		Student student = inputStudent();
 
-		int rows = service.registerStudent(student);
-		if (rows > 0)
-			System.out.println("ADD SUCCESS");
-		else
-			System.out.println("FAILED TO ADD ");
+		if (StudentValidator.isStudentValid(student)) {
+
+			int rows = service.registerStudent(student);
+			if (rows > 0)
+				System.out.println("ADD SUCCESS");
+			else
+				System.out.println("FAILED TO ADD ");
+		} else {
+			System.out.print("Not Valid Student    ");
+			System.err.println(StudentValidator.msg.toUpperCase());
+		}
 	}
 
 	private static void showStudents() {
