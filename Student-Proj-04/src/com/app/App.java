@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Scanner;
 
-import com.dao.StudentDAO;
-import com.dao.StudentDAOImpl;
 import com.model.Student;
 import com.service.StudentService;
 import com.service.StudentServiceImpl;
@@ -97,6 +95,8 @@ public class App {
 	private static void addStudent() {
 
 		Student student = inputStudent();
+		StudentV
+
 		int rows = service.registerStudent(student);
 		if (rows > 0)
 			System.out.println("ADD SUCCESS");

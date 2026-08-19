@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
-    <fullyQualifiedTypeName name="com.dao.EmployeeDao"/>
     <fullyQualifiedTypeName name="com.dao.EmployeeDaoImpl"/>
     <fullyQualifiedTypeName name="com.model.Employee"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
@@ -39,16 +36,28 @@
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.net.URL"/>
     <fullyQualifiedTypeName name="java.util.function.Predicate"/>
-    <fullyQualifiedTypeName name="com.utility.DBUtility"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-    <fullyQualifiedTypeName name="com.dao.StudentDAOImpl"/>
-    <fullyQualifiedTypeName name="com.dao.StudentDAO"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.sql.DatabaseMetaData"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="com.utility.DBUtility"/>
+    <fullyQualifiedTypeName name="com.dao.StudentDAO"/>
+    <fullyQualifiedTypeName name="com.dao.StudentDAOImpl"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.model.Student"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.service.StudentService"/>
+    <fullyQualifiedTypeName name="com.service.StudentServiceImpl"/>
+    <fullyQualifiedTypeName name="java.lang.Runtime"/>
+    <fullyQualifiedTypeName name="com.exception.StudentDAoException"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="com.exception.StudentServiceException"/>
+    <fullyQualifiedTypeName name="p1.Student"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.rmi.StubNotFoundException"/>
+    <fullyQualifiedTypeName name="p1.StudentException"/>
+    <fullyQualifiedTypeName name="java.lang.Throwable"/>
 </qualifiedTypeNameHistroy>

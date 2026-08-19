@@ -95,6 +95,9 @@ public class StudentDAOImpl implements StudentDAO {
 		return list;
 	}
 
+	
+	// Object queryForObject(id,object)
+	// Student queryForObject(int id,Student.class)
 	@Override
 	public Student findStudentById(int id) {
 		String sql = "SELECT * FROM STUDENT WHERE id=?";
