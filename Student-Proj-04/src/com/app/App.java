@@ -95,7 +95,7 @@ public class App {
 	private static void addStudent() {
 
 		Student student = inputStudent();
-		StudentV
+		
 
 		int rows = service.registerStudent(student);
 		if (rows > 0)
