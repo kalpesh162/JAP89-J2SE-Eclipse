@@ -35,21 +35,26 @@ public class App {
 		Comparator<Task> byPriority = new Comparator<Task>() {
 			@Override
 			public int compare(Task o1, Task o2) {
-				return -Integer.valueOf(o1.getTaskPriority()).compareTo(Integer.valueOf(o2.getTaskPriority()));
+				Integer i1 = Integer.valueOf(o1.getTaskPriority());
+				Integer i2 = Integer.valueOf(o2.getTaskPriority());
+				return -i1.compareTo(i2);
 			}
 		};
-		
-		PriorityQueue<Task> taskQueue=new PriorityQueue<Task>(byPriority);
+
+		PriorityQueue<Task> taskQueue = new PriorityQueue<Task>(byPriority);
 		taskQueue.add(task1);
 		taskQueue.add(task2);
 		taskQueue.add(task3);
 		taskQueue.add(task5);
 		taskQueue.add(task4);
-		
+
 		// Need To Print
-		// 
-		
-		
+		//
+
+		System.out.println("**************************************");
+		while (!taskQueue.isEmpty()) {
+			System.out.println(taskQueue.poll());
+		}
 
 	}
 
