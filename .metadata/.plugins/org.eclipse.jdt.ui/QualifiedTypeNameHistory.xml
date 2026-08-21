@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.music.model.Song"/>
-    <fullyQualifiedTypeName name="com.music.dao.PlayListOperation"/>
-    <fullyQualifiedTypeName name="com.music.dao.PlayListOperationImpl"/>
-    <fullyQualifiedTypeName name="java.io.IOError"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="java.beans.beancontext.BeanContextServiceProviderBeanInfo"/>
     <fullyQualifiedTypeName name="p3.Student"/>
@@ -16,7 +9,6 @@
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="basic.Student"/>
     <fullyQualifiedTypeName name="com.basic.Student"/>
-    <fullyQualifiedTypeName name="java.util.PrimitiveIterator"/>
     <fullyQualifiedTypeName name="java.util.TreeSet"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
@@ -29,14 +21,12 @@
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="boolean"/>
     <fullyQualifiedTypeName name="java.lang.Class"/>
-    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.net.URL"/>
     <fullyQualifiedTypeName name="java.util.function.Predicate"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.sql.DatabaseMetaData"/>
     <fullyQualifiedTypeName name="java.sql.Connection"/>
-    <fullyQualifiedTypeName name="com.utility.DBUtility"/>
     <fullyQualifiedTypeName name="com.dao.StudentDAO"/>
     <fullyQualifiedTypeName name="com.dao.StudentDAOImpl"/>
     <fullyQualifiedTypeName name="com.service.StudentService"/>
@@ -44,7 +34,6 @@
     <fullyQualifiedTypeName name="java.lang.Runtime"/>
     <fullyQualifiedTypeName name="com.exception.StudentDAoException"/>
     <fullyQualifiedTypeName name="p1.Student"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.rmi.StubNotFoundException"/>
     <fullyQualifiedTypeName name="p1.StudentException"/>
@@ -60,4 +49,15 @@
     <fullyQualifiedTypeName name="com.model.Student"/>
     <fullyQualifiedTypeName name="com.validator.StudentValidator"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.zip.InflaterInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="p1.App"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.util.Properties"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="java.awt.image.DataBuffer"/>
+    <fullyQualifiedTypeName name="com.utility.DBUtility"/>
+    <fullyQualifiedTypeName name="java.util.PrimitiveIterator"/>
+    <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
 </qualifiedTypeNameHistroy>

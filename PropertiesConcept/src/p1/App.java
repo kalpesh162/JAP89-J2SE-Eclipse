@@ -14,12 +14,11 @@ public class App {
 
 		// Step 2 : db.properties
 		try {
-			/*
-			 * InputStream inputStream = new FileInputStream( new
-			 * File("E:/JAVA-WorkSpace-89/PropertiesConcept/src/db.properties"));
-			 */
 
-			InputStream inputStream = App.class.getClassLoader().getSystemResourceAsStream("db.properties");
+			InputStream inputStream = new FileInputStream(new File("./db.properties"));
+
+			// InputStream inputStream =
+			// App.class.getClassLoader().getSystemResourceAsStream("db.properties");
 
 			if (inputStream == null)
 				System.out.println("File Not Loaded");

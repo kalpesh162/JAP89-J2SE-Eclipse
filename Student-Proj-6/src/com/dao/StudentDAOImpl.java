@@ -131,4 +131,24 @@ public class StudentDAOImpl implements StudentDAO {
 
 	}
 
+	public List<Student> findAllStudent1() {
+		List<Student> list = new ArrayList<Student>();
+		String sql = "SELECT * FROM STUDENT";
+		try (Connection con = DBUtility.getInstace().getDBConnection();
+				PreparedStatement ps = con.prepareStatement(sql)) {
+
+			if (ps.execute()) {
+				ResultSet rs = ps.getResultSet();
+				while (rs.next()) {
+					Student student = mapRowStudent(rs);
+					list.add(student);
+				}
+			}
+			return list;
+		} catch (SQLException e) {
+			StudentDAOException ex = new StudentDAOException("Failed To Fetch ", e);
+		}
+		return list;
+	}
+
 }

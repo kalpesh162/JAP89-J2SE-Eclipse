@@ -1,11 +1,9 @@
 package com.utility;
 
-import java.awt.image.DataBuffer;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.util.PrimitiveIterator;
 import java.util.Properties;
 
 public class DBUtility {
@@ -21,6 +19,9 @@ public class DBUtility {
 
 		Properties properties = new Properties();
 		InputStream inputStream = DBUtility.class.getClassLoader().getResourceAsStream("db.properties");
+
+		if (inputStream == null)
+			throw new RuntimeException("File Not Found " );
 
 		try {
 			properties.load(inputStream);
