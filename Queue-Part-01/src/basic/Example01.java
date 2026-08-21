@@ -34,10 +34,10 @@ public class Example01 {
 		System.out.println("++++++++++++++++++");
 		System.out.println(queue);
 		
-		//System.out.println(queue.element());
+		//System.out.println(queue.element());  // NoSuchElementException
 		//System.out.println(queue.peek());
 		
-		//System.out.println(queue.remove());
+		//System.out.println(queue.remove()); // NoSuchElementException
 		//System.out.println(queue.poll());
 		
 		
