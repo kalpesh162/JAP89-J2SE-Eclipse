@@ -5,7 +5,8 @@ import java.io.Serializable;
 public class Student implements Serializable {
 	private int id;
 	private String name;
-	private double marks;
+	// private static double marks;
+	private transient double marks;
 
 	public Student() {
 		System.out.println("Student COnstructor ");
