@@ -8,10 +8,11 @@ public class Student implements Serializable {
 	private double marks;
 
 	public Student() {
-		// TODO Auto-generated constructor stub
+		System.out.println("Student COnstructor ");
 	}
 
 	public Student(int id, String name, double marks) {
+		System.out.println("Student Parametrized cOnstructor ");
 		this.id = id;
 		this.name = name;
 		this.marks = marks;
