@@ -10,14 +10,13 @@ public class DeserilizeTest {
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-		FileInputStream fin = new FileInputStream("stud.txt");
+		FileInputStream fin = new FileInputStream("student.txt");
 
 		ObjectInputStream objectInputStream = new ObjectInputStream(fin);
 
 		// Object object=objectInputStream.readObject();
 
 		Student student = (Student) objectInputStream.readObject();
-		// Here internally java created default Object of Student
 
 		System.out.println(student);
 

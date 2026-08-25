@@ -11,7 +11,7 @@ public class App {
 		Student student = new Student(11, "Sagar", 66.66);
 		// Step File Create
 
-		FileOutputStream fileOutputStream = new FileOutputStream("stud.txt");
+		FileOutputStream fileOutputStream = new FileOutputStream("student.txt");
 
 		ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
 

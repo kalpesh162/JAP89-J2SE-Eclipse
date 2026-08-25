@@ -60,6 +60,7 @@ public class Student implements Cloneable {
 	protected Object clone() throws CloneNotSupportedException {
 
 		Student cloned = (Student) super.clone();
+
 		cloned.course = (Course) cloned.course.clone();
 
 		return cloned;
