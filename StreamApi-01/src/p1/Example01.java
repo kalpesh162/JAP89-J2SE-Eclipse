@@ -11,14 +11,10 @@ public class Example01 {
 	public static void main(String[] args) {
 		// 1 :
 		Stream<String> s1 = Stream.of("Anup", "Navin", "Ravi", "Ganesh");
-
 		// s1 is stream Object implementation
-
 		// 2 : Empty Stream
 		Stream<Integer> numbers = Stream.empty();
-
 		// Step 3 :
-
 		Stream<String> s3 = Stream.<String>builder().add("A").add("B").add("C").build();
 
 		// Stream Object by using concat
