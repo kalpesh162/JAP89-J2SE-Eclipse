@@ -20,6 +20,13 @@ public class Assignment01 {
 				                           .collect(toList());
 		
 		System.out.println(squareNumbers);
+		
+		List<Integer> squareEven=numbers.stream()
+								       .filter(n->n%2==0)
+								       .map(n->n*n)
+								       .collect(toList());
+								
+		System.out.println(squareEven);	
 	}
 
 }
