@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
+import java.util.stream.Collectors;
+import static java.util.stream.Collectors.toList;;
 
 public class Example01 {
 
@@ -26,7 +28,7 @@ public class Example01 {
 		
 		Function<String, String> capital1=String::toUpperCase;
 
-				
+				// map(Function<T,R>)
 		friends.stream()
 			   .map(capital)
 			   .forEach((n) -> System.out.println(n));
@@ -45,14 +47,20 @@ public class Example01 {
 		       .forEach(System.out::println);
 		
 		
+		System.out.println("-------------------------");
+		// collect(Collector)  Collectors
+		// Collectors.toList()
+		 List<String> result=friends.stream()
+		 	    .map(String::toUpperCase)
+		 	    .collect(Collectors.toList());
+		 
+		 System.out.println("--------------------------");
 		
-		
-		
-		
-		
-			   
-		
-		
+		 List<String> result1=friends.stream()
+				 					 .map(String::toUpperCase)
+				 					 .collect(toList());
+			
+		 
 		
 		
 	}

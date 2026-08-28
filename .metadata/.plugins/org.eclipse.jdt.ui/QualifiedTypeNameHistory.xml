@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.utility.DBUtility"/>
-    <fullyQualifiedTypeName name="java.util.PrimitiveIterator"/>
-    <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
-    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
-    <fullyQualifiedTypeName name="java.util.Queue"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="moderate.Task"/>
@@ -42,22 +35,29 @@
     <fullyQualifiedTypeName name="java.lang.CloneNotSupportedException"/>
     <fullyQualifiedTypeName name="cloning9.Welcome"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.Package"/>
     <fullyQualifiedTypeName name="java.security.Permission"/>
     <fullyQualifiedTypeName name="java.io.Serializable"/>
     <fullyQualifiedTypeName name="basic.Addable"/>
-    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
     <fullyQualifiedTypeName name="p1.WelcomeMessage"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="p2.SquareOperation"/>
     <fullyQualifiedTypeName name="java.util.function.Supplier"/>
-    <fullyQualifiedTypeName name="java.util.function.Function"/>
-    <fullyQualifiedTypeName name="java.lang.Double"/>
     <fullyQualifiedTypeName name="java.util.function.Consumer"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="consume.Triangle"/>
     <fullyQualifiedTypeName name="java.util.function.Predicate"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.time.Year"/>
+    <fullyQualifiedTypeName name="java.nio.file.attribute.AclEntry.Builder"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="java.util.function.UnaryOperator"/>
+    <fullyQualifiedTypeName name="java.util.stream.Stream"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="java.util.function.Function"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 </qualifiedTypeNameHistroy>
