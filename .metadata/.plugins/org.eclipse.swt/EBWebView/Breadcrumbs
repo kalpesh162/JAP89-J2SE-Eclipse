@@ -1,30 +1,47 @@
-0:01:35 Tab1 PageLoad
-0:01:40 Tab1 StartNav20 #typed
-0:01:40 Tab1 FinishNav20
-0:01:40 Tab1 PageLoad
-0:02:11 Tab1 StartNav21 #typed
-0:02:11 Tab1 FinishNav21
-0:02:11 Tab1 PageLoad
-0:02:11 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
-0:02:11 Microsoft.UnloadController.HasCompletedUnloadProcessing_False
-0:02:11 Microsoft.Shutdown.OnWindowClosing
-0:02:11 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
-0:02:11 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
-0:02:11 Microsoft.Shutdown.TabStripModel.CloseAllTabs
-0:02:11 Microsoft.Shutdown.TabStripModel.CloseTabs
-0:02:11 Microsoft.Shutdown.TabStripModel.CloseTabs_EdgeBeforeClosingAllTabs
-0:02:11 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl
-0:02:11 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_TabClosable
-0:02:11 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_ClosingAll
-0:02:11 Microsoft.Shutdown.TabStripModel.CloseWebContentses
-0:02:11 Microsoft.Shutdown.TabStripModel.CloseWebContentses_FastShutdown
-0:02:11 Microsoft.Shutdown.TabStripModel.ShouldRunUnloadListenerBeforeClosing_false
-0:02:11 Tab1 RenderProcessGone
-0:02:11 Microsoft.UnloadController.ClearUnloadState
-0:02:11 Microsoft.Shutdown.TabStripModel.RunUnloadListenerBeforeClosing_false
-0:02:11 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_ClosedAll
-0:02:11 Microsoft.Shutdown.TabStripModel.SendDetachWebContentsNotifications
-0:02:11 Browser1 Close Tab1 at 0
-0:02:11 Microsoft.UnloadController.ClearUnloadState
-0:02:11 Tab1 WebContentsDestroyed
-0:02:11 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+1:10:14 Microsoft.Shutdown.TabStripModel.CloseTabs
+1:10:14 Microsoft.Shutdown.TabStripModel.CloseTabs_EdgeBeforeClosingAllTabs
+1:10:14 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl
+1:10:14 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_TabClosable
+1:10:14 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_ClosingAll
+1:10:14 Microsoft.Shutdown.TabStripModel.CloseWebContentses
+1:10:14 Microsoft.Shutdown.TabStripModel.CloseWebContentses_FastShutdown
+1:10:14 Microsoft.Shutdown.TabStripModel.ShouldRunUnloadListenerBeforeClosing_false
+1:10:14 Tab45 RenderProcessGone
+1:10:14 Microsoft.UnloadController.ClearUnloadState
+1:10:14 Microsoft.Shutdown.TabStripModel.RunUnloadListenerBeforeClosing_false
+1:10:14 Microsoft.Shutdown.TabStripModel.InternalCloseTabsImpl_ClosedAll
+1:10:14 Microsoft.Shutdown.TabStripModel.SendDetachWebContentsNotifications
+1:10:14 Browser45 Close Tab45 at 0
+1:10:14 Microsoft.UnloadController.ClearUnloadState
+1:10:14 Tab45 WebContentsDestroyed
+1:10:14 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+1:10:14 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+1:10:14 Microsoft.Shutdown.OnWindowClosing
+1:10:14 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+1:10:14 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+1:10:14 Microsoft.Shutdown.OnWindowClosing_MaybeClearBrowsingDataOnExit
+1:10:14 Microsoft.Shutdown.OnWindowClosing_ClearBrowsingDataOnExitNotInProgress
+1:10:14 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
+1:10:14 Widget Closed: BrowserWidget
+1:10:14 Microsoft.UnloadController.TabStripEmpty
+1:10:14 Microsoft.UnloadController.HasCompletedUnloadProcessing_True
+1:10:14 Microsoft.Shutdown.OnWindowClosing
+1:10:14 Microsoft.Shutdown.OnWindowClosing_DeleteScheduled
+1:10:14 Microsoft.Browser_Removed
+1:10:17 Memory Pressure: Moderate
+1:10:27 Memory Pressure: Moderate
+1:10:37 Memory Pressure: Moderate
+1:10:47 Memory Pressure: Moderate
+1:10:57 Memory Pressure: Moderate
+1:11:07 Memory Pressure: Moderate
+1:11:17 Memory Pressure: Moderate
+1:11:27 Memory Pressure: Moderate
+1:11:37 Memory Pressure: Moderate
+1:11:47 Memory Pressure: Moderate
+1:11:57 Memory Pressure: Moderate
+1:12:07 Memory Pressure: Moderate
+1:12:17 Memory Pressure: Moderate
+1:12:27 Memory Pressure: Moderate
+1:12:37 Memory Pressure: Moderate
+1:12:47 Memory Pressure: Moderate
+1:12:48 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
