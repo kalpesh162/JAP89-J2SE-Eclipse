@@ -26,6 +26,10 @@ public class App {
 		Comparator<Student>byId2=(st1,st2) -> Integer.valueOf(st1.getId()).compareTo(Integer.valueOf(st2.getId()));
 		
 		
+		Comparator<Student>byId3=(st1,st2) -> Integer.compare(st1.getId(), st2.getId());
+		
+		//Comparator<Student>byId4=Integer::compare;
+		
 		TreeSet<Student>trSet=new TreeSet<Student>(byId2);
 		trSet.add(s1);trSet.add(s2);trSet.add(s3);trSet.add(s4);trSet.add(s5);
 		

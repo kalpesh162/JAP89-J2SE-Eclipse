@@ -44,5 +44,4 @@ public class Student {
 	public String toString() {
 		return String.format("%d  %s %.2f  ", id, name, marks);
 	}
-
 }
